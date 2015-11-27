@@ -40,5 +40,3 @@
 			fi
 		fi
 	done
-
-# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id tempus ipsum. Nullam eget dolor finibus, tincidunt turpis et, condimentum est. Nam magna turpis, ultrices non sagittis ac, facilisis at ante. Etiam consequat efficitur arcu quis vestibulum. Curabitur nunc dolor, pharetra non commodo at, faucibus at orci. Mauris vel interdum ante. Donec a vehicula massa. Sed pellentesque semper varius. Nunc pellentesque odio ut ipsum vehicula vulputate. Proin vulputate, lorem eu aliquet tincidunt, eros nibh consectetur justo, non viverra nibh sem a dui. Nunc rhoncus nibh turpis, a interdum mi accumsan vel. Morbi convallis fringilla tellus at scelerisque. Donec vel placerat sapien.
