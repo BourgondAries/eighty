@@ -6,9 +6,18 @@
 	fi
 	characters=0
 	locked=0
+	foundnewline=0
 
 	while IFS= read -r -N 1 i; do
-		if [[ $locked -eq 1 ]]; then
+		if [[ $foundnewline -eq 1 ]]; then
+			if [[ $i = $'\n' ]]; then
+				printf '%s' $'\n\n'
+			else
+				printf '%s' " $i"
+			fi
+			foundnewline=0
+			characters=0
+		elif [[ $locked -eq 1 ]]; then
 			if [[ $i = $'\n' ]]; then
 				locked=0
 			fi
@@ -23,8 +32,8 @@
 
 		else
 			if [[ "$i" = $'\n' ]]; then
-				characters=0
-				printf '%s' "$i"
+				((characters += 1))
+				foundnewline=1
 			else
 				((characters += 1))
 				if [[ $characters -gt $maxcharacters ]]; then
