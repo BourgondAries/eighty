@@ -49,6 +49,3 @@
 			fi
 		fi
 	done
-
-# a b d
-# d e f
