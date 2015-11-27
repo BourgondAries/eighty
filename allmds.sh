@@ -1,9 +1,8 @@
 #! /bin/bash
 
 	shopt -s globstar
-	all=$(find . -name "*.md")
-	for file in $all; do
-		echo $file
-		contents=$(cat $file | eighty)
-		printf '%s' "$contents" > $file
+	find . -type f -name '*.md' -print0 | while IFS= read -r -d '' file; do
+		echo "$file"
+		contents=$(cat "$file" | eighty)
+		printf '%s' "$contents" > "$file"
 	done
