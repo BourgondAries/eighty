@@ -1,4 +1,4 @@
-# E	ighty #
+# Eighty #
 
 Eighty takes one parameter: the minimal line count. If the parameter is not given, then
 the line count will be 80. Eighty reads from the standard input:
