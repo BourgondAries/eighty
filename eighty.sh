@@ -12,11 +12,11 @@
 		if [[ $foundnewline -eq 1 ]]; then
 			if [[ $i = $'\n' ]]; then
 				printf '%s' $'\n\n'
+				characters=0
 			else
 				printf '%s' " $i"
 			fi
 			foundnewline=0
-			characters=0
 		elif [[ $locked -eq 1 ]]; then
 			if [[ $i = $'\n' ]]; then
 				locked=0
@@ -49,3 +49,6 @@
 			fi
 		fi
 	done
+
+# a b d
+# d e f
