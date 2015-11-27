@@ -1,6 +1,6 @@
 # Eighty #
 
-Eighty takes one parameter: the minimal line count. If the parameter is not given, then
+Eighty takes one parameter: the minimal character-per-line count. If the parameter is not given, then
 the line count will be 80. Eighty reads from the standard input:
 
 	echo "hello world" | ./eighty 5
@@ -11,6 +11,7 @@ Another method is by catting a file:
 
 ## Operations ##
 
+Eighty breaks only on spaces or paragraphs.
 Eighty will ignore lines beginning with proper tabs. These lines must form proper paragraphs.
 Paragraphs are designated using two newlines.
 
